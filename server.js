@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(__dirname));
 
-require('/routes/routes')(app);
+require('./routes/route')(app);
 
 //listener
 app.listen(PORT, function() {
