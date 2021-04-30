@@ -85,6 +85,7 @@ const handleNoteDelete = (e) => {
 
   if (activeNote.id === noteId) {
     activeNote = {};
+    
   }
 
   deleteNote(noteId).then(() => {
